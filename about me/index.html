@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт Мосійчук Вероніки, ТЦР-11</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            min-height: 200vh; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            overflow-x: hidden; 
+            overflow-y: scroll; 
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 130px;
+            left: 0;
+            width: 100%;
+            height: calc(100% - 50px);
+            background: url('/Foto.png') no-repeat top center;
+            background-size: contain; 
+            z-index: -1; 
+        }
+
+        /* Стиль для тексту привітання */
+        .greeting {
+            font-family: 'Great Vibes', cursive; /* Застосовуємо шрифт */
+            font-size: 100px;
+            color: #F8EDD5;
+            text-align: center;
+            margin-top: 1200px;
+            z-index: 5;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            gap: 35px;
+            position: absolute;
+            top: 25px;
+            right: 30px;
+            z-index: 10; 
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #F8EDD5;
+            font-size: 16px;
+            font-weight: bold;
+            border: 2px solid #F8EDD5; 
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            text-align: center;
+            background-color: transparent;
+        }
+
+        nav ul li a:hover {
+            background-color: #F8EDD5;
+            color: #000;
+        }
+
+        nav ul li a:active {
+            background-color: #e0e0e0;
+        }
+
+        /* Фіксуємо футер внизу */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: #981919; 
+            color: #F8EDD5;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            font-size: 16px;
+            z-index: 10;
+        }
+
+        footer a {
+            color: #F8EDD5;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            margin: 0 10px; /* Додаємо відступ між елементами */
+        }
+
+        footer a:hover {
+            color: #d8c7b2;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">ГОЛОВНА</a></li>
+            <li><a href="about.html">ПРО МЕНЕ</a></li>
+            <li><a href="practice.html">ПРАКТИЧНІ РОБОТИ</a></li>
+            <li><a href="lab.html">ЛАБОРАТОРНІ РОБОТИ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Додаємо текст привітання -->
+    <div class="greeting">
+        Вітаю на моєму сайті!
+    </div>
+
+    <!-- Футер внизу сторінки -->
+    <footer>
+        <span>Телефон: +380660898513</span>
+        <a href="mailto:vmosijcuksk@gmail.com">vmosijcuksk@gmail.com</a>
+        <a href="https://github.com/Veronika130" target="_blank">GitHub</a>
+    </footer>
+
+</body>
+</html>

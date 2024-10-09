@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degrada2 Design</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            min-height: 100vh; 
+            display: flex;
+            flex-direction: column;
+            background-color: #000;
+            overflow-x: hidden; 
+            overflow-y: scroll; 
+            position: relative;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            gap: 35px;
+            position: absolute;
+            top: 25px;
+            right: 30px;
+            z-index: 10; 
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #F8EDD5;
+            font-size: 16px;
+            font-weight: bold;
+            border: 2px solid #F8EDD5; 
+            border-radius: 25px; 
+            transition: all 0.3s ease;
+            text-align: center;
+            background-color: transparent;
+        }
+
+        nav ul li a:hover {
+            background-color: #F8EDD5;
+            color: #000;
+        }
+
+        nav ul li a:active {
+            background-color: #a9a9a9;
+        }
+
+        .content {
+            text-align: left; 
+            color: #F8EDD5;
+            font-size: 70px;
+            z-index: 5; 
+            width: 600px;
+            margin-left: 50px; 
+            margin-top: 120px; 
+        }
+
+        .content2 {
+            text-align: left; 
+            color: #F8EDD5;
+            font-size: 25px;
+            z-index: 5; 
+            width: 500px;
+            font-weight: 300;
+            margin-left: 50px; 
+        }
+
+        .button-container {
+            margin-top: 10px;
+            margin-left: 50px;
+            z-index: 100; /* Важливо: це піднімає кнопку над іншими елементами */
+            position: relative;
+        }
+
+        a.button {
+            background-color: #F8EDD5;
+            color: #000;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            z-index: 100; /* Важливо: це також піднімає кнопку */
+        }
+
+        a.button:hover {
+            background-color: #d8c7b2;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            margin-top: -300px; 
+            position: relative; /* Переконайтесь, що зображення не перекриває кнопку */
+            z-index: 1; /* Низький z-index, щоб зображення не перекривало кнопку */
+        }
+
+        .rounded-image {
+            border-radius: 20px; 
+            max-width: 600px;
+            margin-right: 100px; 
+        }
+        .second-content {
+            text-align: left; 
+            color: #F8EDD5;
+            font-size: 80px;
+            z-index: 5; 
+            width: 700px;
+            margin-top: 150px;
+            height: 500px;
+            font-weight: bold;
+            margin-left: 50px; 
+        }
+
+        .second-content-description {
+            text-align: left; 
+            color: #F8EDD5;
+            font-size: 25px;
+            z-index: 5; 
+            width: 600px;
+            margin-top: -300px;
+            font-weight: 300;
+            margin-left: 50px; 
+        }
+
+        .second-image-container {
+            display: flex;
+            justify-content: flex-end;
+            width: 90%;
+            margin-left: 150px;
+            margin-top: -350px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .second-rounded-image {
+            border-radius: 20px; 
+            max-width: 600px; 
+            margin-right: 100px; 
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">ГОЛОВНА</a></li>
+            <li><a href="about.html">ПРО МЕНЕ</a></li>
+            <li><a href="practice.html">ПРАКТИЧНІ РОБОТИ</a></li>
+            <li><a href="lab.html">ЛАБОРАТОРНІ РОБОТИ</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <p>ЛАБОРАТОРНА I</p>  
+    </div>
+    
+    <div class="content2">
+        <p>
+            Створити HTML-форму для заповнення даних.
+        </p>
+    </div>
+
+    <div class="button-container">
+        <a href="pr_1.html" class="button">Переглянути форму</a>
+    </div>
+
+    <div class="image-container">
+        <img src="/lab1.png" alt="Приклад форми" class="rounded-image">
+    </div>
+    <div class="second-content">
+        <p>ЛАБОРАОРНА II</p>
+    </div>
+
+    <div class="second-content-description">
+        <p>
+            Створти копію YouTube.
+        </p>
+    </div>
+
+    <div class="button-container">
+        <a href="lab_3.html" class="button">Переглянути копію</a>
+    </div>
+
+    <div class="second-image-container">
+        <img src="/lab_2.png" alt="Календар подій" class="second-rounded-image">
+    </div>
+
+</body>
+</html>

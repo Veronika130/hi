@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розклад занять ТЦР-21</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border-radius: 10px; /* Заокруглення країв таблиці */
+            overflow: hidden;
+            
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #31753a;
+            color: white;
+        }
+
+        .time-slot {
+            background-color: #ddd;
+        }
+
+        .lecture {
+            background-color: #e6f7ff; /* Блакитний для лекцій */
+        }
+
+        .seminar {
+            background-color: #d9f2d9; /* Зелений для семінарів/практичних */
+        }
+
+        .lab {
+            background-color: #fff4e6; /* Кремовий для лабораторних */
+        }
+
+        .empty {
+            background-color: #f2f2f2;
+        }
+
+        .no-classes {
+            background-color: #f0f0f0;
+            color: #999;
+        }
+
+        .small-text {
+            font-size: 12px; /* Зменшений шрифт для викладачів та аудиторій */
+        }
+    </style>
+</head>
+<body>
+
+<h2>Розклад занять для групи ТЦР-21</h2>
+
+<h3>Тиждень 16.09 - 22.09</h3>
+<table>
+    <tr>
+        <th>Час</th>
+        <th>Понеділок</th>
+        <th>Вівторок</th>
+        <th>Середа</th>
+        <th>Четвер</th>
+        <th>П'ятниця</th>
+        <th>Субота</th>
+        <th>Неділя</th>
+    </tr>
+    <tr>
+        <td class="time-slot">08:00 - 09:35</td>
+        <td class="lecture">Вища математика<br><span class="small-text">Білоусова Світлана Вікторівна<br>Дистанційно</span></td>
+        <td class="seminar">WEB-технології та WEB-дизайн<br><span class="small-text">Дзюба Вадим Віталійович<br>207</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="seminar">Професійна практика програмної інженерії<br><span class="small-text">Сватко Віталій Володимирович<br>207</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+    <tr>
+        <td class="time-slot">09:45 - 11:20</td>
+        <td class="lecture">Дослідження операцій<br><span class="small-text">Бажан Тетяна Олександрівна<br>Дистанційно</span></td>
+        <td class="seminar">Об'єктно-орієнтоване програмування<br><span class="small-text">Вишневський Олександр Вікторович<br>207</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="seminar">Українська мова за професійним спрямуванням<br><span class="small-text">Степко Світлана Орестівна<br>129</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+    <tr>
+        <td class="time-slot">11:45 - 13:20</td>
+        <td class="lecture">Об'єктно-орієнтоване програмування<br><span class="small-text">Вишневський Олександр Вікторович<br>Дистанційно</span></td>
+        <td class="seminar">Дослідження операцій<br><span class="small-text">Бажан Тетяна Олександрівна<br>216</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+    <tr>
+        <td class="time-slot">13:30 - 15:05</td>
+        <td class="lecture">Філософія<br><span class="small-text">Власенко Вадим Олександрович<br>Дистанційно</span></td>
+        <td class="seminar">Дослідження операцій<br><span class="small-text">Бажан Тетяна Олександрівна<br>211</span></td>
+        <td class="seminar">Вища математика<br><span class="small-text">Білоусова Світлана Вікторівна<br>501</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+    <tr>
+        <td class="time-slot">15:15 - 16:50</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="seminar">Вища математика<br><span class="small-text">Білоусова Світлана Вікторівна<br>501</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+    <tr>
+        <td class="time-slot">17:00 - 18:35</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="seminar">Фізичне виховання<br><span class="small-text">Безуглий Юрій Борисович<br>Стадіон</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+</table>
+
+<h3>Тиждень 23.09 - 29.09</h3>
+<table>
+    <tr>
+        <th>Час</th>
+        <th>Понеділок</th>
+        <th>Вівторок</th>
+        <th>Середа</th>
+        <th>Четвер</th>
+        <th>П'ятниця</th>
+        <th>Субота</th>
+        <th>Неділя</th>
+    </tr>
+    <tr>
+        <td class="time-slot">08:00 - 09:35</td>
+        <td class="lecture">Вища математика<br><span class="small-text">Білоусова Світлана Вікторівна<br>Дистанційно</span></td>
+        <td class="seminar">Філософія<br><span class="small-text">Власенко Вадим Олександрович<br>507</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="seminar">Професійна практика програмної інженерії<br><span class="small-text">Сватко Віталій Володимирович<br>207</span></td>
+        <td class="lecture">Українська мова за професійним спрямуванням<br><span class="small-text">Степко Світлана Орестівна<br>Дистанційно</span></td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+    <tr>
+        <td class="time-slot">09:45 - 11:20</td>
+        <td class="lecture">Об'єктно-орієнтоване програмування<br><span class="small-text">Вишневський Олександр Вікторович<br>Дистанційно</span></td>
+        <td class="lab">WEB-технології та WEB-дизайн<br><span class="small-text">Дзюба Вадим Віталійович<br>207</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="lab">Вища математика<br><span class="small-text">Олімпієва Юлія Ігорівна<br>517</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+    <tr>
+        <td class="time-slot">11:45 - 13:20</td>
+        <td class="lecture">Професійна практика програмної інженерії<br><span class="small-text">Сватко Віталій Володимирович<br>207</span></td>
+        <td class="lab">Об'єктно-орієнтоване програмування<br><span class="small-text">Вишневський Олександр Вікторович<br>207</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+    <tr>
+        <td class="time-slot">13:30 - 15:05</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="lab">Дослідження операцій<br><span class="small-text">Бажан Тетяна Олександрівна<br>211</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+    <tr>
+        <td class="time-slot">15:15 - 16:50</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+    
+    <tr>
+        <td class="time-slot">17:00 - 18:35</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+</table>
+<h3>Тиждень 30.09 - 06.10</h3>
+<table>
+    <tr>
+        <th>Час</th>
+        <th>Понеділок</th>
+        <th>Вівторок</th>
+        <th>Середа</th>
+        <th>Четвер</th>
+        <th>П'ятниця</th>
+        <th>Субота</th>
+        <th>Неділя</th>
+    </tr>
+    <tr>
+        <td class="time-slot">08:00 - 09:35</td>
+        <td class="lecture">Вища математика<br><span class="small-text">Білоусова Світлана Вікторівна<br>Дистанційно</span></td>
+        <td class="seminar">WEB-технології та WEB-дизайн<br><span class="small-text">Дзюба Вадим Віталійович<br>207</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="seminar">Професійна практика програмної інженерії<br><span class="small-text">Сватко Віталій Володимирович<br>207</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+    <tr>
+        <td class="time-slot">09:45 - 11:20</td>
+        <td class="lecture">Дослідження операцій<br><span class="small-text">Бажан Тетяна Олександрівна<br>Дистанційно</span></td>
+        <td class="seminar">Об'єктно-орієнтоване програмування<br><span class="small-text">Вишневський Олександр Вікторович<br>207</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="seminar">Українська мова за професійним спрямуванням<br><span class="small-text">Степко Світлана Орестівна<br>129</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+    <tr>
+        <td class="time-slot">11:45 - 13:20</td>
+        <td class="lecture">Об'єктно-орієнтоване програмування<br><span class="small-text">Вишневський Олександр Вікторович<br>Дистанційно</span></td>
+        <td class="seminar">Дослідження операцій<br><span class="small-text">Бажан Тетяна Олександрівна<br>216</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+    <tr>
+        <td class="time-slot">13:30 - 15:05</td>
+        <td class="lecture">Філософія<br><span class="small-text">Власенко Вадим Олександрович<br>Дистанційно</span></td>
+        <td class="seminar">Дослідження операцій<br><span class="small-text">Бажан Тетяна Олександрівна<br>211</span></td>
+        <td class="seminar">Вища математика<br><span class="small-text">Білоусова Світлана Вікторівна<br>501</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+    <tr>
+        <td class="time-slot">15:15 - 16:50</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="seminar">Вища математика<br><span class="small-text">Білоусова Світлана Вікторівна<br>501</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+    <tr>
+        <td class="time-slot">17:00 - 18:35</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="seminar">Фізичне виховання<br><span class="small-text">Безуглий Юрій Борисович<br>Стадіон</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+</table>
+
+<h3>Тиждень 07.10 - 13.10</h3>
+<table>
+    <tr>
+        <th>Час</th>
+        <th>Понеділок</th>
+        <th>Вівторок</th>
+        <th>Середа</th>
+        <th>Четвер</th>
+        <th>П'ятниця</th>
+        <th>Субота</th>
+        <th>Неділя</th>
+    </tr>
+    <tr>
+        <td class="time-slot">08:00 - 09:35</td>
+        <td class="lecture">Вища математика<br><span class="small-text">Білоусова Світлана Вікторівна<br>Дистанційно</span></td>
+        <td class="seminar">Філософія<br><span class="small-text">Власенко Вадим Олександрович<br>507</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="seminar">Професійна практика програмної інженерії<br><span class="small-text">Сватко Віталій Володимирович<br>207</span></td>
+        <td class="lecture">Українська мова за професійним спрямуванням<br><span class="small-text">Степко Світлана Орестівна<br>Дистанційно</span></td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+    <tr>
+        <td class="time-slot">09:45 - 11:20</td>
+        <td class="lecture">Об'єктно-орієнтоване програмування<br><span class="small-text">Вишневський Олександр Вікторович<br>Дистанційно</span></td>
+        <td class="lab">WEB-технології та WEB-дизайн<br><span class="small-text">Дзюба Вадим Віталійович<br>207</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="lab">Вища математика<br><span class="small-text">Олімпієва Юлія Ігорівна<br>517</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+    <tr>
+        <td class="time-slot">11:45 - 13:20</td>
+        <td class="lecture">Професійна практика програмної інженерії<br><span class="small-text">Сватко Віталій Володимирович<br>207</span></td>
+        <td class="lab">Об'єктно-орієнтоване програмування<br><span class="small-text">Вишневський Олександр Вікторович<br>207</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+    <tr>
+        <td class="time-slot">13:30 - 15:05</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="lab">Дослідження операцій<br><span class="small-text">Бажан Тетяна Олександрівна<br>211</span></td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+    <tr>
+        <td class="time-slot">15:15 - 16:50</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+    
+    <tr>
+        <td class="time-slot">17:00 - 18:35</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+        <td class="no-classes">Нема пар</td>
+    </tr>
+</table>
+</body>
+</html>

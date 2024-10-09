@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/material_orange.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #a45319;
+            display: flex;
+            justify-content: space-between;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .wrapper {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        .left-space {
+            flex: 3;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 0px 20px 20px 0px;
+        }
+
+        .right-space {
+            flex: 5;
+            background-color: transparent;
+            background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_632/b3c315205621361.66be110cd8e08.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 10px;
+            width: 100%;
+            max-width: 350px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            color: #a45319;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            position: relative; /* Відносне позиціонування для контейнера поля */
+        }
+
+        label {
+            font-size: 1em;
+            margin-bottom: 5px;
+            display: block;
+            font-weight: bold;
+            color: #FF6D00;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"], input[type="text"]#dob {
+            width: 100%;
+            padding: 10px 35px 10px 10px;
+            margin-top: 5px;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            box-sizing: border-box;
+            font-size: 1em;
+            outline: none;
+            transition: border-bottom-color 0.3s ease;
+        }
+
+        /* Іконка всередині поля */
+        .calendar-icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5em;
+            pointer-events: none;
+            color: #FF6D00;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="text"]#dob:focus {
+            border-bottom-color: #FF6D00;
+        }
+
+        button {
+            width: 100%;
+            background-color: #e34e18;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        button:hover {
+            background-color: #b85712;
+        }
+
+        .flatpickr-calendar {
+            background-color: #fff5e6;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .flatpickr-day {
+            color: #333;
+            border-radius: 4px;
+        }
+
+        .flatpickr-day.today {
+            background-color: #FF6D00;
+            color: white;
+        }
+
+        .flatpickr-day.selected {
+            background-color: #FF6D00;
+            color: white;
+        }
+
+        .flatpickr-prev-month, .flatpickr-next-month {
+            color: #FF6D00;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="wrapper">
+    <div class="left-space">
+        <div class="container">
+            <form action="https://webhook.site/c0bf517d-9e31-41f0-8c81-1e853ca78d1e" method="POST">
+                <h2>Registration Form</h2>
+                
+                <div class="form-group">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email.." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Your password.." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password.." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="text" id="dob" name="dob" placeholder="Select your birthdate" required>
+                    <i class="calendar-icon">&#128197;</i> <!-- Іконка календаря всередині поля -->
+                </div>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="right-space"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+<script>
+    flatpickr("#dob", {
+        dateFormat: "Y-m-d",
+        altInput: true,
+        altFormat: "F j, Y",
+        maxDate: "today",
+        theme: "material_orange"
+    });
+</script>
+
+</body>
+</html>
